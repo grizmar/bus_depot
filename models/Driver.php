@@ -5,14 +5,14 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "driver".
+ * Модель для списка водителей
  *
  * @property int $id
- * @property string|null $full_name
- * @property string|null $birthday
- * @property int $bus
+ * @property string|null $full_name ФИО
+ * @property string|null $birthday дата рождения
+ * @property int $bus идентификатор автобуса, которым может управлять водитель
  *
- * @property Bus $bus0
+ * @property Bus $bus0 автобус, которым может управлять водитель
  */
 class Driver extends \yii\db\ActiveRecord
 {
@@ -45,9 +45,9 @@ class Driver extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'full_name' => 'Full Name',
-            'birthday' => 'Birthday',
-            'bus' => 'Bus',
+            'full_name' => 'ФИО',
+            'birthday' => 'Дата рождения',
+            'bus' => 'Автобус',
         ];
     }
 

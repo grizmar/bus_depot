@@ -5,11 +5,11 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "bus".
+ * Модель для списка автобусов
  *
  * @property int $id
- * @property string $name
- * @property int $speed
+ * @property string $name название
+ * @property int $speed средняя скорость
  *
  * @property Driver[] $drivers
  */
