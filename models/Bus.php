@@ -9,7 +9,7 @@ use Yii;
  *
  * @property int $id
  * @property string $name название
- * @property int $speed средняя скорость
+ * @property int $speed средняя скорость в метрах в час (для наибольшего разброса результатов при тестировании)
  *
  * @property Driver[] $drivers
  */

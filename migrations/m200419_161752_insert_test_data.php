@@ -33,15 +33,16 @@ class m200419_161752_insert_test_data extends Migration
      */
     protected function getBuses(): array
     {
+        // Средняя скорость заполняется в м/час для разброса данных при тестировании, так как расстояния между городами не настолько большие, чтобы количество дней в пути было хотя бы больше одного
         return [
-            ['Scania', rand(40, 100)],
-            ['Man', rand(40, 100)],
-            ['TAZ', rand(40, 100)],
-            ['PAZ', rand(40, 100)],
-            ['Lada', rand(40, 100)],
-            ['Ford', rand(40, 100)],
-            ['Mersedes', rand(40, 100)],
-            ['Audi', rand(40, 100)],
+            ['Scania', rand(1, 10000)],
+            ['Man', rand(1, 10000)],
+            ['TAZ', rand(1, 10000)],
+            ['PAZ', rand(1, 10000)],
+            ['Lada', rand(1, 10000)],
+            ['Ford', rand(1, 10000)],
+            ['Mersedes', rand(1, 10000)],
+            ['Audi', rand(1, 10000)],
         ];
     }
 
